@@ -1,645 +1,383 @@
 ---
-# You can also start simply with 'default'
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+theme: default
+layout: image
+image: 'https://st4.depositphotos.com/1071909/24336/i/450/depositphotos_243364796-stock-photo-coach-motivate-personal-development-success.jpg'
+class: 'text-center'
+highlighter: shiki
+lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
-class: text-center
-# https://sli.dev/features/drawing
+  ## Crecimiento Personal: Un Viaje de Autodescubrimiento
+  Presentación sobre las distintas áreas del crecimiento personal.
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
-mdc: true
-# take snapshot for each slide in the overview
-overviewSnapshots: true
+title: Crecimiento Personal
+css: unocss
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
+# Crecimiento Personal
+## Un Viaje de Autodescubrimiento
 
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer bg-slate-800" hover="bg-slate-900">
+    Presiona Espacio para comenzar el viaje <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+<style>
+h1 {
+  background-color: #e3962e;
+  background-image: linear-gradient(45deg, #e3962e 10%, #edaf75 90%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+---
+layout: image-right
+image: 'https://www.ehimarsalud.com/wp-content/uploads/2021/01/Pasos-para-alcanzar-el-crecimiento-personal.jpg'
+background: '#FFFFFF'
+---
+
+# ¿Qué es el Crecimiento Personal?
+
+El crecimiento personal es un proceso continuo de:
+
+- Autoconocimiento
+- Desarrollo de habilidades
+- Superación de límites
+- Mejora de la calidad de vida
+- Alcance de metas y sueños
+
+<blockquote style="background-color: #f9cca2; border-left: 4px solid #e3962e; padding: 10px; color: #1c0a06;">
+  "El único límite para nuestro crecimiento es el que nosotros mismos nos imponemos." - Anónimo
+</blockquote>
+
+<style>
+h1 {
+  color: #e3962e;
+}
+ul {
+  color: #1c0a06;
+}
+.grid div {
+  background-color: #f9cca2;
+  border-radius: 5px;
+  color: #1c0a06;
+}
+</style>
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# Áreas de Crecimiento Personal
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Exploraremos las siguientes áreas:
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
+<div class="grid grid-cols-2 gap-4">
+  <h2 class="my-6" v-click="1">1. Desarrollo Intelectual</h2>
+  <h2 class="my-6" v-click="2">2. Salud Física y Mental</h2>
+  <h2 class="my-6" v-click="3">3. Inteligencia Emocional</h2>
+  <h2 class="my-6" v-click="4">4. Relaciones Interpersonales</h2>
+  <h2 class="my-6" v-click="5">5. Carrera y Finanzas</h2>
+  <h2 class="my-6" v-click="6">6. Espiritualidad y Propósito</h2>
+</div>
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #e3962e;
+}
+.grid div {
+  background-color: #f9cca2;
+  padding: 40px;
+  border-radius: 5px;
+  color: #1c0a06;
 }
 </style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
-<!--
-aksdjkjasd
--->
 
 ---
 layout: two-cols
-layoutClass: gap-16
 ---
 
-# Table of contents
+# 1. Desarrollo Intelectual
 
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOf6WquFOuxCYAJNs1Z5fN2Ybe_NRgN-e7NfYpsQKuGuEGmDeiRpwkobxWqM0oA_qhcM9jz7JLvHPvPTkGxpGedj-eDCCIaELJMWV5EBcnXBBUvCoRSr2wOXJ73LCUoi0JOxdT6Zr0f-0/s1600/ima1.jpg" class="w-60 rounded shadow" />
 
 ::right::
 
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+- Lectura constante
+- Aprendizaje de nuevas habilidades
+- Curiosidad y pensamiento crítico
+- Resolución creativa de problemas
+- Educación continua
 
----
-layout: image-right
-image: https://cover.sli.dev
----
+<blockquote style="background-color: #f9cca2; border-left: 4px solid #e3962e; padding: 10px; color: #1c0a06;">
+  "Invertir en conocimiento paga el mejor interés." - Benjamin Franklin
+</blockquote>
 
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
+h1 {
+  color: #e3962e;
 }
-.footnotes {
-  @apply text-sm opacity-75;
+ul {
+  color: #1c0a06;
 }
-.footnote-backref {
-  display: none;
+
+.grid div {
+  background-color: #f9cca2;
+  padding: 40px;
+  border-radius: 5px;
+  color: #1c0a06;
 }
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
 ---
-level: 2
+layout: image-left
+image: 'https://images.gestionaweb.cat/3035/pwimg-1100/1-2411462.jpg'
 ---
 
-# Shiki Magic Move
+# 2. Salud Física y Mental
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+Cuerpo sano, mente sana:
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+- Ejercicio regular
+- Alimentación balanceada
+- Sueño reparador
+- Manejo del estrés
+- Meditación y mindfulness
+- Terapia y autocuidado
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
+<style>
+h1 {
+  color: #e3962e;
 }
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
+ul {
+  color: #1c0a06;
 }
-```
 
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+.grid div {
+  background-color: #f9cca2;
+  border-radius: 5px;
+  color: #1c0a06;
 }
-</script>
-```
-````
+</style>
 
 ---
+transition: slide-up
+---
 
-# Components
+# 3. Inteligencia Emocional
 
-<div grid="~ cols-2 gap-4">
+<div class="grid grid-cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+## Componentes clave:
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+- Autoconciencia
+- Autorregulación
+- Motivación
+- Empatía
+- Habilidades sociales
 
 </div>
 <div>
 
-```html
-<Tweet id="1390115482657726468" />
-```
+## Beneficios:
 
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
+- Mejores relaciones
+- Mayor resiliencia
+- Toma de decisiones efectiva
+- Liderazgo más fuerte
+- Menor estrés
 
 </div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
 </div>
 
-<br>
 
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
+<style>
+h1, h2 {
+  color: #e3962e;
 }
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
+ul {
+  color: #1c0a06;
 }
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
+.grid div {
+  background-color: #f9cca2;
+  padding: 40px;
+  border-radius: 5px;
+  color: #1c0a06;
 }
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 509,205,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <carbon:arrow-up />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+</style>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# 4. Relaciones Interpersonales
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<img src="https://estudiantes.icontinental.edu.pe/wp-content/uploads/2021/12/Relaciones-interpersonales-.jpg" class="w-80 mx-auto rounded shadow" />
 
-<PoweredBySlidev mt-10 />
+- Comunicación efectiva
+- Escucha activa
+- Resolución de conflictos
+- Establecimiento de límites saludables
+- Cultivo de relaciones significativas
+- Trabajo en equipo y colaboración
+
+<style>
+h1 {
+  color: #e3962e;
+}
+ul {
+  color: #1c0a06;
+}
+.grid div {
+  background-color: #f9cca2;
+  padding: 40px;
+  border-radius: 5px;
+  color: #1c0a06;
+}
+</style>
+
+---
+layout: two-cols
+---
+
+# 5. Carrera y Finanzas
+
+- Desarrollo profesional continuo
+- Establecimiento de metas claras
+- Networking y construcción de relaciones
+- Gestión del tiempo y productividad
+- Educación financiera
+- Ahorro e inversión inteligente
+
+::right::
+
+<img src="https://puebla.anahuac.mx/hs-fs/hubfs/AAP/Hint%20MKT%202022/Blogs/AAP%20Hint%20blogs%20t2/estudiante-de-economia.webp?width=800&name=estudiante-de-economia.webp" class="w-full rounded shadow" />
+
+<style>
+h1 {
+  color: #e3962e;
+}
+ul {
+  color: #1c0a06;
+}
+.grid div {
+  background-color: #f9cca2;
+  padding: 40px;
+  border-radius: 5px;
+  color: #1c0a06;
+}
+</style>
+
+---
+layout: image-right
+image: 'https://media.revistagq.com/photos/630f472c8d626ab3d9161441/16:9/w_2560%2Cc_limit/604619026'
+---
+
+# 6. Espiritualidad y Propósito
+
+Encontrando significado en la vida:
+
+- Reflexión y autoconocimiento
+- Definición de valores personales
+- Práctica de gratitud
+- Conexión con algo más grande que uno mismo
+- Servicio a los demás
+- Búsqueda de propósito y pasión
+
+<style>
+h1 {
+  color: #e3962e;
+}
+ul {
+  color: #1c0a06;
+}
+.grid div {
+  background-color: #f9cca2;
+  border-radius: 5px;
+  color: #1c0a06;
+}
+</style>
+
+---
+layout: center
+class: text-center
+---
+
+# El Viaje Continúa
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+## Recuerda:
+
+- Sé paciente contigo mismo
+- Celebra los pequeños logros
+- Aprende de los desafíos
+- Mantén una mentalidad de crecimiento
+
+</div>
+<div>
+
+## Próximos pasos:
+
+- Identifica áreas de mejora
+- Establece metas SMART
+- Crea un plan de acción
+- Busca apoyo y recursos
+
+</div>
+</div>
+
+<style>
+h1, h2 {
+  color: #e3962e;
+}
+.grid div {
+  background-color: #f9cca2;
+  border-radius: 5px;
+  color: #1c0a06;
+  padding: 10px;
+}
+</style>
+
+---
+layout: center
+---
+
+# ¡Gracias!
+
+Empieza tu viaje de crecimiento personal hoy
+
+<blockquote style="background-color: #f9cca2; border-left: 4px solid #e3962e; padding: 10px; color: #1c0a06;">
+  "El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es ahora." - Proverbio chino
+</blockquote>
+
+<style>
+h1 {
+  text-align: center;
+  background-color: #e3962e;
+  background-image: linear-gradient(45deg, #e3962e 10%, #edaf75 90%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+p {
+  text-align: center;
+}
+.grid div {
+  background-color: #f9cca2;
+  border-radius: 5px;
+  color: #1c0a06;
+  padding: 10px;
+}
+</style>
