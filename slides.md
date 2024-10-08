@@ -370,6 +370,7 @@ h1 {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+  
 }
 p {
   text-align: center;
