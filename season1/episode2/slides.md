@@ -17,4 +17,4 @@ title: Welcome to Slidev
 mdc: true
 ---
 
-# Home
+# Welcome to Slidev Episode 2
