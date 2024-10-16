@@ -13,6 +13,7 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "slidev-theme-unicorn": "^1.1.2",
+    "vite": "^5.4.9",
     "vue": "^3.5.10"
   },
   "devDependencies": {

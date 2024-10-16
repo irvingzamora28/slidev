@@ -1,7 +1,8 @@
 {
+  "buildCommand": "npm run build-all",
+  "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+    { "source": "/season1/episode1/(.*)", "destination": "/season1/episode1/index.html" },
+    { "source": "/season1/episode2/(.*)", "destination": "/season1/episode2/index.html" }
+  ]
 }
