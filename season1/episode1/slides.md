@@ -21,12 +21,13 @@ La visa de reunificación familiar permite a cónyuges de personas residentes en
 ---
 
 ## Proceso de Solicitud
-1. **Cita en la embajada**: Necesaria para iniciar el proceso.
-2. **Formulario**: Documentación y formulario completos y firmados.
-3. **Aprobación de extranjería**: Indispensable antes de otorgar la visa.
+1. **Formulario**: Documentación y formulario completos y firmados.
+2. **Reservar cita**: Necesaria para iniciar el proceso.
+3. **Asistir a cita en la embajada**: Asistir a la cita y presentar documentación.
 4. **Tiempo de espera**: Entre 6 y 8 semanas a partir de la entrega de documentos.
-5. **Recomendación**: No reservar vuelos antes de recibir la visa.
+5. **Recibir visa en domicilio**: Se entrega en el domicilio indicado en el paquete PakMail.
 
+**Recomendación**: No reservar vuelos antes de recibir la visa.
 ---
 
 ## Documentación Requerida
